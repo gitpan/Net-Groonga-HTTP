@@ -3,7 +3,11 @@ abstract: 'Client library for Groonga httpd.'
 author:
   - 'tokuhirom <tokuhirom@gmail.com>'
 build_requires:
+  File::Temp: 0
+  File::Which: 0
+  Scalar::Util: 0
   Test::More: 0.98
+  Test::TCP: 0
 configure_requires:
   CPAN::Meta: 0
   CPAN::Meta::Prereqs: 0
@@ -27,7 +31,7 @@ no_index:
 provides:
   Net::Groonga::HTTP:
     file: lib/Net/Groonga/HTTP.pm
-    version: 0.02
+    version: 0.03
   Net::Groonga::HTTP::Response:
     file: lib/Net/Groonga/HTTP/Response.pm
   Net::Groonga::Pager:
@@ -43,4 +47,4 @@ resources:
   bugtracker: https://github.com/tokuhirom/Net-Groonga-HTTP/issues
   homepage: https://github.com/tokuhirom/Net-Groonga-HTTP
   repository: git://github.com/tokuhirom/Net-Groonga-HTTP.git
-version: 0.02
+version: 0.03

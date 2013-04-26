@@ -50,14 +50,18 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "File::Temp" : "0",
+            "File::Which" : "0",
+            "Scalar::Util" : "0",
+            "Test::More" : "0.98",
+            "Test::TCP" : "0"
          }
       }
    },
    "provides" : {
       "Net::Groonga::HTTP" : {
          "file" : "lib/Net/Groonga/HTTP.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       },
       "Net::Groonga::HTTP::Response" : {
          "file" : "lib/Net/Groonga/HTTP/Response.pm"
@@ -77,5 +81,5 @@
          "web" : "https://github.com/tokuhirom/Net-Groonga-HTTP"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
